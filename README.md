@@ -48,3 +48,5 @@ npx ts-node src/terminal.ts
    ```
 
    Open http://localhost:5173/ in your web browser.
+
+![alt text](image.png)
