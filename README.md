@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides a financial analysis tool with two ways to view the results:
 
-Currently, two official plugins are available:
+1. Terminal Output: Run detailed calculations in the terminal.
+2. Web UI: View results in a user-friendly interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
 
-## Expanding the ESLint configuration
+Before running the project, you need to have the following software installed on your machine:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Node.js** (v16 or above): You can download it from [here](https://nodejs.org/).
+- **npm**: Should be installed automatically with Node.js.
+- **TypeScript**: You can install it globally by running `npm install -g typescript`, but it is already listed in the dependencies for this project.
+- **Git**: For cloning the repository (if you haven't already done so).
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository to your local machine:
+2. Navigate to the project directory:
+
+```
+cd coding-challenge
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+3. Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
 ```
+npm install
+```
+
+## Running the Project:
+
+1. Terminal Output (Detailed Calculations):
+   This command will execute the terminal.ts file and display the calculated financial metrics in the terminal.
+
+```
+npx ts-node src/terminal.ts
+```
+
+2. Web UI (User Interface):
+   This will launch the web application where you can see the financial data displayed in a user-friendly interface.
+
+   Start the development server:
+
+   ```
+   npm run dev
+   ```
+
+   Open http://localhost:5173/ in your web browser.
