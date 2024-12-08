@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext"
+    "target": "ES6",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowJs": true
   },
   "files": [],
   "references": [
